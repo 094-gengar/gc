@@ -1,2 +1,7 @@
+CXX = g++
+
 gc:	gc.o
-	g++ gc.cpp -o gc.o
+	$(CXX) gc.cpp -o gc.o
+	
+clean:	
+	rm -f *.o 
