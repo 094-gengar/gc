@@ -103,7 +103,7 @@ gcは逆ポーランド記法の計算機です。
 
 `g++ gc.cpp -o gc.o`
 
-または
+、clangが入っている人は
 
 `clang++ gc.cpp -o gc.o`
 
