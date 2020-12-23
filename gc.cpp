@@ -6,7 +6,7 @@ using namespace std;
 #define int long long
 #define ld long double
 ld gc(string s){
-	vector<ld>v;
+	vector<ld>v;int Icnt=0;
 	int n=s.length();
 	s+="__________";
 	for(int i=0;i<n;i++)
@@ -76,11 +76,10 @@ ld gc(string s){
 			ld pop1=v[v.size()-1],pop2=v[v.size()-2];
 			v.pop_back();v.pop_back();v.push_back(min(pop1,pop2));
 		}
-		bool Icnt=0;
 
 		//Internal processings
 		if(s[i]=='P'){
-			if(Icnt==0){	
+			if(Icnt==1){	
 				cout<<(int)v[v.size()-1]<<endl;
 			}else{
 				cout<<v[v.size()-1]<<endl;
