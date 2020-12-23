@@ -74,7 +74,7 @@ ld gc(string s){
 		}
 		if(s[i]=='m'&&s[i+1]=='a'&&s[i+2]=='x'){
 			ld pop1=v[v.size()-1],pop2=v[v.size()-2];
-			v.pop_back();v.pop_back();v.push_back(min(pop1,pop2));
+			v.pop_back();v.pop_back();v.push_back(max(pop1,pop2));
 		}
 
 		//Internal processings
